@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-
 <html xmlns:th="http://www.w3.org/1999/xhtml">
-
-
 <head>
     <title>CoronaVirus tracker Application</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
 </head>
 
 <body>
-
 <h1>Corona virus tracker application</h1>
 <p>This application lists the current number of cases reported across the globe</p>
-
 <div class="jumbotron">
     <h1 class="display-4" th:text="${totalReportedCases}">Total cases</h1>
     <p class="lead">Total cases reported as today.</p>
@@ -24,9 +18,7 @@
         <span th:text="${totalNewCases}"></span>
     </p>
 </div>
-
 <div class="container">
-
 <table class ="table">
     <tr>
         <th>State</th>
@@ -43,5 +35,4 @@
 </table>
 </div>
 </body>
-
 </html>

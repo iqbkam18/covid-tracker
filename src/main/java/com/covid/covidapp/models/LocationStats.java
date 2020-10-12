@@ -38,7 +38,6 @@ public class LocationStats {
     public void setLatestTotalCases(int lastestTotalCases) {
         this.LatestTotalCases = lastestTotalCases;
     }
-
     @Override
     public String toString() {
         return "LocationStats{" +

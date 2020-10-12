@@ -1,12 +1,10 @@
 package com.covid.covidapp.services;
 
-
 import com.covid.covidapp.models.LocationStats;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
-
 import javax.annotation.PostConstruct;
 import java.io.IOException;
 import java.io.StringReader;
@@ -38,7 +36,6 @@ public class CoronaVirusService {
                 .build();
         HttpResponse<String> httpResponse = client.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(httpResponse.body());
-
         StringReader csvBodyReader = new StringReader(httpResponse.body());
         Iterable<CSVRecord> records = CSVFormat.DEFAULT.withFirstRecordAsHeader().parse(csvBodyReader);
         for (CSVRecord record : records) {

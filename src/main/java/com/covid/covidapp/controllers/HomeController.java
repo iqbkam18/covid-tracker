@@ -1,5 +1,4 @@
 package com.covid.covidapp.controllers;
-
 import com.covid.covidapp.models.LocationStats;
 import com.covid.covidapp.services.CoronaVirusService;
 import org.springframework.beans.factory.annotation.Autowired;
